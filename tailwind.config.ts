@@ -19,6 +19,7 @@ const config: Config = {
         white: "var(--white)",
         black: "var(--black)",
         lightBlack: "var(--light-black)",
+        accentBlack: "var(--accent-black)",
         textGray: "var(--text-gray)"
       }
     },

@@ -16,8 +16,8 @@ const linksStyle =
 
 function Footer() {
   return (
-    <footer className="bg-background border-t-4 border-lightBlack ">
-      <div className="flex justify-between items-start container py-12 ">
+    <footer className="bg-background ">
+      <div className="flex justify-between items-start container pt-4 pb-12 ">
         {/* Logo and description =============== */}
         <h3 className="font-bold text-2xl text-white">RMS</h3>
         {/* <Image /> */}

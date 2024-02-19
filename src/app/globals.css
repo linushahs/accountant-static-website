@@ -7,8 +7,8 @@
     @apply w-[90%] mx-auto 2xl:w-[80%];
   }
 
-  .large-heading{
-     @apply capitalize text-[72px] leading-[82px] text-black dark:text-white font-bold;
+  .large-heading {
+    @apply capitalize text-[72px] leading-[80px] text-black dark:text-white font-bold;
   }
 }
 
@@ -23,6 +23,7 @@
     --white: #ffffff;
     --black: #000000;
     --light-black: rgba(0, 0, 0, 0.2);
+    --accent-black: #424242;
     --text-gray: #8b8b8b;
   }
 
@@ -32,7 +33,8 @@
     --light-white: #eeeeee;
     --white: #ffffff;
     --black: #000000;
-    --light-black: rgba(0, 0, 0, 0.94);
+    --light-black: rgba(0, 0, 0, 0.84);
+    --accent-black: #424242;
     --tex-gray: #8b8b8b;
   }
 

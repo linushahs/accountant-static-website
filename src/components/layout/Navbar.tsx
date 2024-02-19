@@ -6,7 +6,7 @@ function Navbar() {
   };
 
   return (
-    <nav className=" h-[var(--navbar-height)] flex bg-lightBlack ">
+    <nav className=" h-[var(--navbar-height)] flex bg-lightBlack backdrop-blur">
       <div className="container flex justify-between  items-center dark:text-white">
         {/* <Image src=""/> */}
         <h3 className="text-xl font-bold ">RMS</h3>
