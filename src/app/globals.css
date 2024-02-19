@@ -2,32 +2,41 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
+@layer components {
+  .container {
+    @apply w-[90%] mx-auto 2xl:w-[80%];
+  }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+  .large-heading{
+     @apply capitalize text-[72px] leading-[82px] text-black dark:text-white font-bold;
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
+@layer base {
+  :root {
+    --navbar-height: 70px;
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+    /* Colors ====================== */
+    --background: #eee;
+    --primary: #d3f40a;
+    --light-white: #eeeeee;
+    --white: #ffffff;
+    --black: #000000;
+    --light-black: rgba(0, 0, 0, 0.2);
+    --text-gray: #8b8b8b;
+  }
+
+  .dark {
+    --background: #1b1b1b;
+    --primary: #d3f40a;
+    --light-white: #eeeeee;
+    --white: #ffffff;
+    --black: #000000;
+    --light-black: rgba(0, 0, 0, 0.94);
+    --tex-gray: #8b8b8b;
+  }
+
+  h1 {
+    @apply large-heading;
   }
 }
